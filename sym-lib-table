@@ -25,4 +25,6 @@
   (lib (name TE_3-1734742-8)(type Legacy)(uri ${KIPRJMOD}/lib_sch/TE_3-1734742-8.lib)(options "")(descr ""))
   (lib (name XF2M-3215-1A)(type Legacy)(uri ${KIPRJMOD}/lib_sch/XF2M-3215-1A.lib)(options "")(descr ""))
   (lib (name XF2M-5015-1A)(type Legacy)(uri ${KIPRJMOD}/lib_sch/XF2M-5015-1A.lib)(options "")(descr ""))
+  (lib (name 3-1734839-2)(type Legacy)(uri ${KIPRJMOD}/lib_sch/3-1734839-2.lib)(options "")(descr ""))
+  (lib (name 3-1734592-2)(type Legacy)(uri ${KIPRJMOD}/lib_sch/3-1734592-2.lib)(options "")(descr ""))
 )
