@@ -95,8 +95,6 @@ $EndComp
 Wire Wire Line
 	4300 1175 3250 1175
 Wire Wire Line
-	4300 1275 3250 1275
-Wire Wire Line
 	4300 1475 3250 1475
 Wire Wire Line
 	4300 1575 3250 1575
@@ -438,8 +436,6 @@ Wire Wire Line
 Connection ~ 4500 2775
 Text Label 3450 1175 0    50   ~ 0
 CSI_DN0__SD_LVDS0_N
-Text Label 3450 1275 0    50   ~ 0
-CSI_DP0__SD_LVDS0_P
 Text Label 3450 1475 0    50   ~ 0
 CSI_DN1__SD_LVDS1_N
 Text Label 3450 1575 0    50   ~ 0
@@ -503,23 +499,21 @@ Connection ~ 2750 4325
 Wire Wire Line
 	2750 4325 4425 4325
 Wire Wire Line
-	1775 5250 725  5250
+	1775 5450 725  5450
 Wire Wire Line
 	1775 5350 725  5350
 Wire Wire Line
-	1775 5450 725  5450
-Wire Wire Line
 	1775 5150 725  5150
 Wire Wire Line
-	4825 5350 3775 5350
-Wire Wire Line
-	4825 5450 3775 5450
+	1775 5250 725  5250
 Wire Wire Line
 	4825 5650 3775 5650
 Wire Wire Line
+	4825 5450 3775 5450
+Wire Wire Line
 	4825 5250 3775 5250
 Wire Wire Line
-	3775 5150 4825 5150
+	4825 5350 3775 5350
 Wire Wire Line
 	1775 5650 1125 5650
 $Comp
@@ -541,21 +535,21 @@ Wire Wire Line
 	1125 5050 1775 5050
 Wire Wire Line
 	1125 4325 2750 4325
-Text Label 850  5250 0    50   ~ 0
+Text Label 850  5450 0    50   ~ 0
 I2C_SDA_1V8
 Text Label 850  5350 0    50   ~ 0
 I2C_SCL_1V8
 Text Label 3825 5450 0    50   ~ 0
 I2C_CLK_3V3
-Text Label 3825 5350 0    50   ~ 0
-I2C_DAT_3V3
-Text Label 850  5450 0    50   ~ 0
-CSI_PWDN_1V8
-Text Label 850  5150 0    50   ~ 0
-CSI_nRST_1V8
 Text Label 3825 5650 0    50   ~ 0
-SENS_EN_3V3
+I2C_DAT_3V3
+Text Label 850  5150 0    50   ~ 0
+CSI_PWDN_1V8
+Text Label 850  5250 0    50   ~ 0
+CSI_nRST_1V8
 Text Label 3825 5250 0    50   ~ 0
+SENS_EN_3V3
+Text Label 3825 5350 0    50   ~ 0
 SENS_RST_3V3
 $Comp
 L 74xGxx:SN74LVC1G14DRL U2
@@ -621,10 +615,6 @@ Wire Wire Line
 	2875 6075 3925 6075
 Wire Wire Line
 	3925 6075 3925 6725
-Wire Wire Line
-	2250 1775 1200 1775
-Wire Wire Line
-	2250 1875 1200 1875
 $Comp
 L Device:C C1
 U 1 1 619130F9
@@ -699,17 +689,6 @@ F 3 "" H 9825 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9825 4100 9825 4475
-Wire Wire Line
-	1000 2775 850  2775
-Wire Wire Line
-	1000 2775 2250 2775
-Connection ~ 1000 2775
-Wire Wire Line
-	1000 2775 1000 2975
-Wire Wire Line
-	1000 2975 2250 2975
-Wire Wire Line
-	4500 2775 4500 3225
 $Comp
 L 1888863-4:1888863-4 J1
 U 1 1 60AAB188
@@ -720,6 +699,78 @@ F 2 "footprints:TE_1888863-4" H 2750 2075 50  0001 L BNN
 F 3 "1888863-4" H 2750 2075 50  0001 L BNN
 F 4 "Compliant" H 2750 2075 50  0001 L BNN "Field4"
 	1    2750 2075
-	1    0    0    -1  
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2775 2250 2775
+Wire Wire Line
+	3250 2975 4500 2975
+Wire Wire Line
+	4500 2775 4500 2975
+Connection ~ 4500 2975
+Wire Wire Line
+	4500 2975 4500 3225
+Text Label 3450 1275 0    50   ~ 0
+CSI_DP0__SD_LVDS0_P
+Wire Wire Line
+	4300 1275 3250 1275
+Wire Wire Line
+	3775 5150 4825 5150
+$Comp
+L Connector:TestPoint TP1
+U 1 1 610FA21D
+P 1200 1975
+F 0 "TP1" V 1303 2047 50  0000 C CNN
+F 1 "TestPoint" V 1304 2047 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1400 1975 50  0001 C CNN
+F 3 "~" H 1400 1975 50  0001 C CNN
+	1    1200 1975
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2250 1775
+NoConn ~ 2250 1875
+$Comp
+L Connector:TestPoint TP5
+U 1 1 6110F3C5
+P 10450 2425
+F 0 "TP5" V 10450 2613 50  0000 L CNN
+F 1 "TestPoint" V 10495 2613 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10650 2425 50  0001 C CNN
+F 3 "~" H 10650 2425 50  0001 C CNN
+	1    10450 2425
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 6110ED4E
+P 10450 2525
+F 0 "TP4" V 10450 2713 50  0000 L CNN
+F 1 "TestPoint" V 10495 2713 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10650 2525 50  0001 C CNN
+F 3 "~" H 10650 2525 50  0001 C CNN
+	1    10450 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6110E5F6
+P 10450 2625
+F 0 "TP3" V 10450 2813 50  0000 L CNN
+F 1 "TestPoint" V 10495 2813 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10650 2625 50  0001 C CNN
+F 3 "~" H 10650 2625 50  0001 C CNN
+	1    10450 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6110DD9A
+P 10450 2725
+F 0 "TP2" V 10450 2913 50  0000 L CNN
+F 1 "TestPoint" V 10495 2913 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10650 2725 50  0001 C CNN
+F 3 "~" H 10650 2725 50  0001 C CNN
+	1    10450 2725
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
