@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Adapter for TEKNIQUE Oclea OS08a20 to MX8M Mini/Plus EVK"
+Date "2021-11-10"
+Rev "V1A"
+Comp "TuxVision"
 Comment1 ""
 Comment2 ""
 Comment3 ""
