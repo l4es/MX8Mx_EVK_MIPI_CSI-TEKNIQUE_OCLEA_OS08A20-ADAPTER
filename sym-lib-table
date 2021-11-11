@@ -27,4 +27,8 @@
   (lib (name XF2M-5015-1A)(type Legacy)(uri ${KIPRJMOD}/lib_sch/XF2M-5015-1A.lib)(options "")(descr ""))
   (lib (name 3-1734839-2)(type Legacy)(uri ${KIPRJMOD}/lib_sch/3-1734839-2.lib)(options "")(descr ""))
   (lib (name 3-1734592-2)(type Legacy)(uri ${KIPRJMOD}/lib_sch/3-1734592-2.lib)(options "")(descr ""))
+  (lib (name PCA9306D)(type Legacy)(uri ${KIPRJMOD}/lib_sch/PCA9306D.lib)(options "")(descr ""))
+  (lib (name NTS0102DP)(type Legacy)(uri ${KIPRJMOD}/lib_sch/NTS0102DP.lib)(options "")(descr ""))
+  (lib (name NLSX5012DMR2G)(type Legacy)(uri ${KIPRJMOD}/lib_sch/NLSX5012DMR2G.lib)(options "")(descr ""))
+  (lib (name NLSX4373DMR2G)(type Legacy)(uri ${KIPRJMOD}/lib_sch/NLSX4373DMR2G.lib)(options "")(descr ""))
 )
