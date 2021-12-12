@@ -1,4 +1,4 @@
-update=Thứ tư, 10 Tháng 11 Năm 2021 22:12:19 +07
+update=Chủ nhật, 12 Tháng 12 Năm 2021 14:26:37 +07
 version=1
 last_client=kicad
 [general]
@@ -243,7 +243,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=prod/V1A/
+PlotDirectoryName=doc/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
